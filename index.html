@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e175886c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class= "container">
+        <nav>
+            <img src="Images/Logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Research Impact">Research Impact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Postdoctoral Researcher | Operations Research | Data Science | Sustainable Supply Chains</p>
+            <h1>Hi, I'm <span>Dr. Ahana Malhotra</span><br>Postdoctoral Researcher in Operations Research<br> & Data Analystics based in Canada</h1>
+    </div>
+</div>
+<!------------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/aboutme.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Dr. Ahana Malhotra, a Postdoctoral Researcher at McMaster University specializing in Operations Research, Data Analytics, 
+                    and Sustainable Supply Chain Management. My work focuses on designing data-driven solutions that improve decision-making in humanitarian 
+                    logistics, food rescue systems, and equitable last-mile delivery.<br><br>
+                    With a multidisciplinary background spanning academia and industry, I combine optimization, machine learning, statistical modeling, 
+                  and business analytics to solve complex operational challenges. My research has led to the development of innovative 
+                  decision-support systems, including the commercialization of a food rescue platform that bridges research with real-world 
+                  community impact.<br><br>
+                  Beyond research, I have published in leading journals, presented my work at international conferences, secured competitive 
+                  scholarships and awards, collaborated with global researchers and industry partners, and mentored students and multidisciplinary 
+                  teams. My expertise spans Python, SQL, R, mathematical optimization (Gurobi & CPLEX), cloud technologies, and advanced analytics, 
+                  enabling me to transform complex data into actionable insights that drive efficiency, sustainability, and meaningful social impact.
+                </p>
+
+                <div class ="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                   <ul>
+
+                    <li><span>Operations Research & Optimization</span><br>
+                       Mathematical Optimization, Linear & Mixed-Integer Programming (MILP), Stochastic Programming, 
+                       Supply Chain Optimization, Dynamic Programming
+                    </li>
+
+                    <li><span>Data Science & Analytics</span><br>
+                        Python (Pandas, NumPy, Scikit-learn), R (dplyr, tidyr, ggplot2), SQL, AWS, GCP, CPLEX, Gurobi, Statistical Analysis, Predictive Analytics, 
+                         Machine Learning, Data Interpretation, Exploratory Data Analysis (EDA)
+                    </li>
+
+                     <li><span>Data Visualization & Business Intelligence</span><br>
+                         Power BI, Tableau, Matplotlib, Plotly, ggplot2, Microsoft Excel (Advanced), Interactive Dashboards, KPI Reporting
+                     </li>
+
+                     <li><span>Research Interest</span><br>
+                         Humanitarian Logistics, Food Rescue Systems, Last-Mile Delivery, Sustainable Supply Chain Management, 
+                         Transportation Analytics, Crowdshipping
+                    </li>
+
+                     <li><span>Research, Leadership & Collaboration</span><br>
+                         Research Commercialization, Research Project Management, Scientific Writing, Grant Proposal Development, Teaching & Mentoring, Cross-functional Collaboration, Stakeholder Engagement, Technical Presentations, Academic Publishing
+                     </li>
+
+                    </ul>
+</div>
+                <div class="tab-contents" id="education">
+                  <ul>
+
+                <li><span>2021 – 2025</span><br>
+                 <strong>Ph.D. in Management Science</strong><br>
+                     McMaster University, DeGroote School of Business, Hamilton, Canada<br>
+                     Dissertation: <i>Equity and Accessibility in Last-Mile Crowdshipping Delivery of Surplus Food Donation</i>
+                 </li>
+
+                <li><span>2018 – 2019</span><br>
+                  <strong>MBA (Business Administration)</strong><br>
+                     Minor: Data Analytics<br>
+                    Mississippi State University, USA
+                </li>
+
+                 <li><span>2012 – 2014</span><br>
+                   <strong>M.Tech. in Process Control Engineering</strong><br>
+                    Netaji Subhas Institute of Technology, New Delhi, India
+                </li>
+
+                 <li><span>2006 – 2010</span><br>
+                   <strong>B.Tech. in Electronics & Communication Engineering</strong><br>
+                      Rajasthan Technical University, India
+                 </li>
+
+                </ul>
+</div>
+                <div class="tab-contents" id="experience">
+                 <ul>
+
+                <li><span>Postdoctoral Fellow | 2026 – Present</span><br>
+                    McMaster University, Canada<br>
+                    • Leading research on AI-driven optimization and sustainable supply chains.<br>
+                    • Collaborating with industry and international researchers.<br>
+                    • Developing innovative decision-support systems for humanitarian logistics.
+                </li>
+
+                 <li><span>Research Assistant & Sessional Faculty | 2021 – 2025</span><br>
+                 McMaster University, Canada<br>
+                 • Published research in leading journals and conferences.<br>
+                 • Built optimization models for equitable food rescue and last-mile delivery.<br>
+                 • Taught 2OC3 Operations Management and mentored undergraduate and graduate students.
+                 </li>
+
+                 <li><span>Lead Data Measurement & Reporting Analyst | 2019 – 2020</span><br>
+                 Cigna Healthcare, USA<br>
+                 • Delivered business intelligence and KPI reporting solutions.<br>
+                 • Improved data quality through advanced analytics and reporting automation.<br>
+                 • Supported strategic business decisions using data-driven insights.
+                </li>
+
+                </ul>
+</div>
+
+            </div>    
+        </div>
+    </div>
+</div> 
+<!---------Services------- --> 
+<div id ="Research Impact">
+    <div class="container">
+        <h1 class="sub-title">Research Impact</h1>
+        <div class="services-list">
+            <div>
+                <h2>Research Commercialization</h2>
+                <p>Translated academic research into real-world impact by leading the development of a food rescue mobile application and web platform. Bridged operations research, data analytics, and technology to support equitable food distribution and strengthen community partnerships.</p>
+                <a href="https://crowdfeeding.ca">Learn more</a>
+            </div>
+            <div>
+                <h2>Optimization & AI Solutions</h2>
+                <p>Designed advanced mathematical optimization and AI-driven decision-support models to solve complex challenges in sustainable supply chains, humanitarian logistics, crowdshipping, and equitable last-mile delivery. Leveraged operations research, machine learning, and analytics to improve efficiency, accessibility, and data-driven decision making.</p>
+                <a href="https://degroote.mcmaster.ca/bulletin-posts/congratulations-to-ahana-malhotra-phd-candidate-in-management-science/">Learn more</a>
+            </div>
+            <div>
+                <h2>Global Collaboration & Partnerships</h2>
+                <p>Collaborated with 10 organizations and 18 international researchers to develop innovative solutions for sustainable supply chains and humanitarian logistics. Fostered interdisciplinary partnerships that bridged academia, industry, nonprofits, and community stakeholders to drive impactful research and practical implementation.</p>
+                <a href="https://www.linkedin.com/search/results/all/?keywords=CrowdFeeding&origin=RICH_QUERY_SUGGESTION&heroEntityKey=urn%3Ali%3Aorganization%3A105293934&position=0">Learn more</a>
+            </div>
+            <div>
+                <h2>Leadership & Mentorship</h2>
+                <p>Led and mentored a multidisciplinary team of 11 students, fostering innovation in research, software development, and community-focused projects. Supervised undergraduate and graduate students, taught Operations Management, and empowered future professionals through collaborative learning and research excellence.</p>
+                <a href=""></a>
+            </div>
+            <div>
+                <h2>Research Excellence & Recognition</h2>
+                <p>Published peer-reviewed research and presented at internationally recognized conferences, including INFORMS, CORS, University of Toronto, and Michigan State University. Contributed to advancing knowledge in Operations Research, Sustainable Supply Chains, and Humanitarian Logistics through high-impact research and scholarly collaboration.</p>
+                <a href=""></a>
+            </div>
+            <div>
+                <h2>Awards & Research Funding</h2>
+                <p>Awarded $168,000+ in competitive scholarships and fellowships, including a $130,000 PhD Scholarship from McMaster University and a $38,000 MBA Scholarship from Mississippi State University. Recognized for academic excellence, innovation, and research leadership through prestigious awards and competitive programs.</p>
+                <a href=""></a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+   
+<!------------Projects-------- --->
+
+<div id ="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Crowdfeeding.jpeg">
+                <div class="layer">
+                    <h3>CrowdFeeding the Vulnerable</h3>
+                    <p>Integrated mathematical modeling and logistics optimization to improve last-mile food accessibility while minimizing operational costs and food waste. Under-review at POMS.
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/foodbank_pro.jpeg">
+                <div class="layer">
+                    <h3>Food is Medicine</h3>
+                    <p>Developed unified framework for procurement and equitable distribution in food bank operations.
+                       <br><br>Technologies- Python • Stochastic Optimization • Dynamic Programming • MILP</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/TNC.jpeg">
+                <div class="layer">
+                    <h3>Rideshare to Care</h3>
+                    <p>Three sided market approach to integrate volunteer deliveries with the passenger rides. Submitted to IJPE
+                    <br><br>Technologies - Python • market equilibrium model</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/parcel.jpeg">
+                <div class="layer">
+                    <h3>Parcel Locker Sharing System</h3>
+                    <p>Developed optimization models for parcel locker sharing to improve accessibility, efficiency, and equity in urban logistics. Research published in the Journal of Transport Geography.
+                    <br><br>Technologies - Operations Research • Optimization • GIS • Data Analytics</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/equitable.jpeg">
+                <div class="layer">
+                    <h3>Equitable Territory Planning</h3>
+                    <p>Introduce comprehensive routing policy to enhance driver performance and customer satisfaction.</p>                    
+                    <br><br>Technologies - Python • SQL • Analytics • Supply Chain</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/edi.jpeg">
+                <div class="layer">
+                    <h3>Equity in on-foot porter mode</h3>
+                    <p>Integrating equity in on-foot deliveries by load sharing and enhancing their performance.</p>
+                    <br><br>Technologies - SQL • Python • CPLEX • MILP • Power BI • Data Visualization</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------------ Publications ---------- -->
+
+<div id="publications">
+    <div class="container">
+        <h1 class="sub-title">Publications</h1>
+
+        <div class="services-list">
+
+            <div>
+                <h2>Journal Publications</h2>
+                <p>
+                    Published in the Journal of Transport Geography. Ongoing research includes manuscripts under review at Production and Operations Management (POMS) and the International Journal of Production Economics (IJPE).
+                </p>
+            </div>
+
+            <div>
+                <h2>Research in Progress</h2>
+                <p>
+                    Leading multiple research projects currently under review, focusing on
+                    food rescue logistics, equitable supply chain optimization,
+                    volunteer delivery systems, and humanitarian operations.
+                </p>
+            </div>
+
+            <div>
+                <h2>International Conferences</h2>
+                <p>
+                    Presented research at leading international conferences including
+                    INFORMS, CORS, University of Toronto, Michigan State University,
+                    and other global research forums.
+                </p>
+            </div>
+
+            <div>
+                <h2>Research Areas</h2>
+                <p>
+                    Operations Research • Sustainable Supply Chains • Humanitarian Logistics •
+                    Last-Mile Delivery • Food Rescue Systems • Data Analytics •
+                    Mathematical Optimization
+                </p>
+            </div>
+
+        </div>
+
+        <a href="https://scholar.google.ca/citations?user=LKHP9zIAAAAJ&hl=en&oi=ao"" class="btn">View Full Publication List</a>
+
+    </div>
+</div>
+
+<!----------Contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i></i> ahanam0511@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1(437)214 9152</p>
+                <div class="social-icons">
+                    <a href="https://scholar.google.ca/citations?user=LKHP9zIAAAAJ&hl=en&oi=ao"><i class="fa-brands fa-google-scholar"></i></a>
+                    <a href="https://www.linkedin.com/in/ahanamalhotra/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="""><i class=""></i></a>
+                </div>
+                <a href="Images/CV_AhanaMalhotra.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name ="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Dr.Ahana Malhotra. Made with <i class="fa-solid fa-heart"></i> by Visual Studio</p>
+
+    </div>
+
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzlnH2xj8a0AG_g6rvmN_5dCZh8QOjbAON6cAK2XuOdF2JqwlWsWJpA-UwBlfhcSwJ4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+      
+</body>
+</html>
